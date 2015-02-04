@@ -10,7 +10,7 @@ No over time the vision is to have all collected sorts of scuba related caclulat
 
 ## Backstory
 
-This project was orginally started by [Anthony Mills](www.anthony-mills) because he got sick of having to try and look up the MOD for 60%+ Nitrox mixes when getting his stage bottle filled. So he decided to build a calculator to use with Ionic Framework. Eventually the project was compiled with [Cordova](http://cordova.apache.org/) for use on [Android](https://play.google.com/store/apps/details?id=com.anthony_mills.scubabrain) and IOS app stores.
+This project was orginally started by [Anthony Mills](http://www.anthony-mills) because he got sick of having to try and look up the MOD for 60%+ Nitrox mixes when getting his stage bottle filled. So he decided to build a calculator to use with Ionic Framework. Eventually the project was compiled with [Cordova](http://cordova.apache.org/) for use on [Android](https://play.google.com/store/apps/details?id=com.anthony_mills.scubabrain) and IOS app stores.
 
 ## Why Release The Codebase?
 
