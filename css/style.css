@@ -1,0 +1,242 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/playfair_normal.woff') format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/playfair_bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/playfair_italic.woff') format('woff');
+}
+
+.bodyElement {
+	background-color: #FFF;
+}
+
+.textContent {
+	padding: 10px;
+}
+
+/* End Navigation related styles */ 
+.navItem {
+	min-height: 78px;	
+    background-color: white;
+    border-bottom: 1px solid #ddd;    
+    padding: 2px 15px 2px 15px;
+    position: relative;
+    z-index: 2;
+}
+
+a.navItem {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+.headingImage {
+	float: right;
+	width: 150px;
+	height: 150px;
+	margin: 2px;
+	border: 1px #000 solid;
+}
+
+.headingText {
+  padding-top: 10px;
+	font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #645f5f;  
+  font-weight: bold;  
+  text-rendering: optimizeLegibility;  		
+}
+
+.navItemSmall {
+	min-height: 78px;	
+    background-color: white;
+    border-bottom: 1px solid #ddd;    
+    padding: 2px 15px 2px 15px;
+    position: relative;
+    z-index: 2;
+}
+
+a.navItemSmall {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+/* End Navigation related styles */ 
+
+.formErrorMsg {
+	color: red;
+	text-align: center;
+}
+
+.paneBackground {
+	background: url('../img/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;	
+}
+
+.aside-open [menu-toggle] {
+  display: none;
+}
+
+.errorText {
+  color: red !important;
+}
+
+.sideMenu {
+	background-color: #008c4a;
+	border-right: 2px #000 solid;
+}
+
+.tableContainer {
+  margin: 10px 5px 10px 5px;
+  text-align: center;
+}
+
+.tableCell {
+  padding: 15px 5px 15px 5px;
+  border-bottom: solid 1px #ccc;
+}
+
+.contentDivider {
+  text-align: center;
+  margin: 10px 5px 10px 5px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #ccc;
+}
+
+#side-menu a {
+  background-color: #ffd600;
+  border: 1px solid #008c4a;
+  color: #008c4a;
+}
+
+textarea {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);  
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  box-sizing:border-box; 
+  width:89%;
+  height: 75px;
+  font-size:1.4rem;
+  padding:1.2rem 0;
+  text-align: center;
+}
+
+input[type=text] {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);  
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  box-sizing:border-box; 
+  width:89%;
+  height: 75px;
+  font-size:1.4rem;
+  padding:1.2rem 0;
+  text-align: center;
+}
+
+input[type=number] {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);  
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  box-sizing:border-box; 
+  width:89%;
+  height: 75px;
+  font-size:1.4rem;
+  padding:1.2rem 0;
+  text-align: center;
+}
+
+select {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);  
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  padding: auto 0;
+  overflow:hidden;
+  box-sizing:border-box;
+  text-align: center !important;
+}
+
+.formContainer {
+  text-align: center;
+}
+
+.formInput {  
+  width:90%;
+  font-size:1.4rem;
+  padding:1.2rem 0;
+  text-align: center !important;
+  padding-left: 5px;
+  padding-right: 55px;
+
+}
+
+input[type=radio] { 
+  width:90%;
+  font-size:1.4rem;
+  padding:1.2rem 0;
+  text-align: center;
+}
+
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 10px; 
+}
+
+.formLabel {
+  text-align: left;
+  padding-left: 6%;
+  padding-bottom: 5px;
+}
+
+ion-input-select
+
+option {
+  color: #008c4a;
+  background:#ffd600;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+:focus {
+  outline
+}
+
+.convertedValue {
+  padding: 10px 0px 10px 0px;
+}

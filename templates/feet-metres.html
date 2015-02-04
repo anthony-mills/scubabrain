@@ -1,0 +1,67 @@
+<ion-view title="Conversion" cache-view="false">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-hide="$exposeAside.active"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header bodyElement paneBackground" padding="true">
+    <div class="card">
+      <div class="item item-divider bar bar-header bar-assertive headingText">
+          Feet / Metres Conversion
+      </div>
+
+      <div class="item item-text-wrap">
+        <div class="tableContainer">
+
+            <div id="feet-to-metres">
+                <div class="formLabel">
+                  Feet to Metres
+                </div>
+
+                <input type="number" min="1" step="1" ng-model="inputFeet" ng-init="inputFeet = 60"/>
+
+                <div ng-if="convertedFeet">
+                  <div class="convertedValue">
+                    {{inputFeet}} feet = {{convertedFeet}} metres
+                  </div>
+                </div>
+
+                <button ng-click="convertFeet( inputFeet )" class="button button-block button-energized ion-calculator">
+                  Convert Feet
+                </button>
+            </div>
+
+            <br />
+
+            <br />
+
+            <div id="metres-to-feet">
+                <div class="formLabel">
+                  Metres to Feet
+                </div>              
+
+                <input type="number" min="1" step="1" ng-model="inputMetres" ng-init="inputMetres = 18"/>
+
+                <div ng-if="convertedMetres">
+                  <div class="convertedValue">
+                    {{inputMetres}} metres = {{convertedMetres}} feet
+                  </div>
+                </div>
+
+                <button ng-click="convertMetres( inputMetres )" class="button button-block button-energized ion-calculator">
+                  Convert Metres
+                </button>
+            </div>
+
+            <br />
+
+            <div class="tableContainer">
+              <img src="img/diver_east.png"/>
+            </div>
+
+            <a href="#/app/home" class="button button-block button-energized ion-home">
+              Home
+            </a>
+        </div>
+      </div>                  
+    </div>
+  </ion-content>
+</ion-view>

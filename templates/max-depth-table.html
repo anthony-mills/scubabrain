@@ -1,0 +1,40 @@
+<ion-view title="MOD Table" cache-view="false">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-hide="$exposeAside.active"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header bodyElement paneBackground" padding="true">
+    <div class="card">
+      <div class="item item-divider bar bar-header bar-assertive headingText">
+          NITROX MOD Table
+      </div>
+
+      <div class="item item-text-wrap">
+        <div class="tableContainer">
+            <div ng-if="modData">
+
+                <div class="row bar bar-header bar-assertive headingText">
+                    <div class="col-33">O2 %</div>
+                    <div class="col-33">1.4 PO2</div>
+                    <div class="col-33">1.6 PO2</div>
+                </div>
+
+                <br />
+                <div class="row" ng-repeat="mixMod in modData">
+                    <div class="col-33 tableCell">{{::mixMod.mix}}</div>
+                    <div class="col-33 tableCell">{{::mixMod.mod14}}</div>
+                    <div class="col-33 tableCell">{{::mixMod.mod16}}</div>
+                </div>
+            </div>
+
+            <div class="tableContainer">
+              <img src="img/diver_angle_east.png"/>
+            </div>
+
+            <a href="#/app/home" class="button button-block button-energized ion-home">
+              Home
+            </a>
+        </div>
+      </div>                  
+    </div>
+  </ion-content>
+</ion-view>
