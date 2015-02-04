@@ -16,6 +16,10 @@ This project was orginally started by [Anthony Mills](www.anthony-mills) because
 
 Anthony is a great believer in the world of Open Source. If other find his code useful or contribute to the code base even better.
 
+## Demo
+
+If you want to see the code in action either install the app from either iTunes or Google Play or alternatively you can view the app in a browser at [scubabrain.anthony-mills.com](https://scubabrain.anthony-mills.com)
+
 ## Changelog
 
 = 0.0.3 = 
