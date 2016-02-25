@@ -125,17 +125,8 @@ angular.module('scubabrain', ['ionic', 'scubabrain.controllers', 'scubabrain.ser
           controller: 'FeetMetresCtrl'
         }
       }
-    })  
-
-    .state('app.about', {
-      url: '/about',
-      views: {
-        'menuContent' :{
-          templateUrl: 'templates/about.html',
-          controller: 'AboutCtrl'
-        }
-      }
-    })
+    })   
+    /** Start the miscellanous static pages **/
 
   // Default route (used as a fallback should the request not match any of the defined routes)
   $urlRouterProvider.otherwise('/app/home');

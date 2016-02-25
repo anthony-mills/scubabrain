@@ -96,6 +96,19 @@ a.navItemSmall {
   color: red !important;
 }
 
+.nitroxMenu {
+  background-color: #008c4a !important;
+  color: #ffd600;
+}
+
+.nitroxMenu .title {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;  
+  text-rendering: optimizeLegibility;   
+  color: #ffd600 !important;
+}
+
 .sideMenu {
 	background-color: #008c4a;
 	border-right: 2px #000 solid;
@@ -239,4 +252,9 @@ select::-ms-expand {
 
 .convertedValue {
   padding: 10px 0px 10px 0px;
+}
+
+.resultHeading {
+  text-align: right !important;
+  padding-right: 5px;
 }

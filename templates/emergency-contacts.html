@@ -1,12 +1,15 @@
-<ion-view title="Emergency Contacts">
-  <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
+<ion-view title="Emergency Contacts" cache-view="false" align-title="center">
+  <ion-nav-bar class="nitroxMenu">
+    <ion-nav-buttons side="left" class="bar bar-header nitroxMenu">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-hide="$exposeAside.active"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar> 
+
   <ion-content class="has-header bodyElement paneBackground" padding="true">
 
     <!-- America contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        America
       </div>
 
@@ -22,7 +25,7 @@
 
     <!-- Australia contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        Australia
       </div>
 
@@ -30,12 +33,12 @@
         Diver Alert Network ( DAN ) 
         <a href="tel:1800088200" class="item item-icon-left button button-block button-positive">
           <i class="icon ion-android-call"></i>
-          1800-088 200 (Australia)
+          1800 088 200 (Inside Australia)
         </a>
 
         <a href="tel:+61882129242" class="item item-icon-left button button-block button-positive">
           <i class="icon ion-android-call"></i>
-           +61 882129242 (Abroad)
+          +61 882129242 (Outside Australia)
         </a>
 
         Prince of Wales Hospital
@@ -50,7 +53,7 @@
 
     <!-- Europe contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        Europe
       </div>
 
@@ -65,7 +68,7 @@
 
     <!-- Japan contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        Japan
       </div>
 
@@ -80,7 +83,7 @@
 
     <!-- New Zealand contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        New Zealand
       </div>
 
@@ -95,7 +98,7 @@
     
     <!-- South Africa contact details -->
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
        South Africa
       </div>
 
@@ -111,5 +114,14 @@
         </a>        
       </div>        
     </div> 
+
+    <div class="card">
+
+      <div class="item item-text-wrap">
+        <a href="#/app/home" class="button button-block button-energized ion-home">
+          Home
+        </a>          
+      </div>        
+    </div>     
   </ion-content>
 </ion-view>

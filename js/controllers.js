@@ -16,7 +16,6 @@ angular.module('scubabrain.controllers', [])
 
 // Controller for the Emergency contacts page
 .controller('EmergencyContactsCtrl', function( $scope) {
-  
 })
 
 // Controller for the EAD depth page
@@ -39,7 +38,7 @@ angular.module('scubabrain.controllers', [])
 })
 
 // Controller for the Partial Pressure calculator
-.controller('PartialPressureCtrl', function( $scope, $state, nitroxCalculations ) { 
+.controller('PartialPressureCtrl', function( $scope, $state, nitroxCalculations ) {  
 
     $scope.showForm = 1;
     $scope.depthUnit = localStorage.getItem("depthUnit");
@@ -59,7 +58,7 @@ angular.module('scubabrain.controllers', [])
 })
 
 // Controller for the max depth page
-.controller('MaxDepthCtrl', function( $scope, $state, nitroxCalculations ) {
+.controller('MaxDepthCtrl', function( $scope, $state, nitroxCalculations ) {  
 
     $scope.showForm = 1;
 
@@ -79,7 +78,7 @@ angular.module('scubabrain.controllers', [])
 })
 
 // Controller for BAR - PSI page
-.controller('BarPsiCtrl', function( $scope ) {
+.controller('BarPsiCtrl', function( $scope ) {;
 
       $scope.convertBar = function( inputBar ) {        
         $scope.convertedBar = Math.round( inputBar * 14.5037738 );
@@ -103,18 +102,16 @@ angular.module('scubabrain.controllers', [])
 })
 
 // Controller for the max depth page
-.controller('MaxDepthTableCtrl', function( $scope, nitroxCalculations ) { 
+.controller('MaxDepthTableCtrl', function( $scope, nitroxCalculations ) {
 
       $scope.modData = nitroxCalculations.modTable();      
 })
 
 // Controller for the Disclaimer page
-.controller('DisclaimerCtrl', function() {
-
-})
+.controller('DisclaimerCtrl', function() {})
 
 // Controller for the Settings page
-.controller('SettingsCtrl', function($scope) {
+.controller('SettingsCtrl', function($scope) {  
 
     var depthUnit = localStorage.getItem("depthUnit");
 
@@ -128,7 +125,7 @@ angular.module('scubabrain.controllers', [])
     $scope.saveSettings = function(useImperial) {    
       if ( useImperial ) {
         localStorage.setItem("depthUnit", "imperial");
- 
+
         console.log('Switching to imperial measurements');
       } else {
         localStorage.setItem("depthUnit", "metric");
@@ -137,10 +134,3 @@ angular.module('scubabrain.controllers', [])
       }
     }
 })
-
-// Controller for the about page
-.controller('AboutCtrl', function() {
- 
-})
-
-

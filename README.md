@@ -2,11 +2,11 @@
 
 ## Project Intro
 
-This project is a scuba diving related calculator tool. Allowing divers to easily find the maximum operating depth (MOD) and other attributes of various oxygen enriched gases.
+This project is a calculator tool aimed at helping scuba divers find the optimum enriched air mix for their dive plan. The application is built using the [Ionic Framework](http://ionicframework.com/).
 
 ## Is it just Nitrox calculations?
 
-No over time the vision is to have all collected sorts of scuba related caclulations.
+No over time the vision is to have all collected sorts of scuba related calculations.
 
 ## Backstory
 
@@ -14,13 +14,17 @@ This project was orginally started by [Anthony Mills](http://www.anthony-mills) 
 
 ## Why Release The Codebase?
 
-Anthony is a great believer in the world of Open Source. If other find his code useful or contribute to the code base even better.
+I am a great believer in the world of Open Source. If other find his code useful or contribute to the code base even better.
 
 ## Demo
 
 If you want to see the code in action either install the app from either iTunes or Google Play or alternatively you can view the app in a browser at [scubabrain.anthony-mills.com](https://scubabrain.anthony-mills.com)
 
 ## Changelog
+
+= 0.0.4 =
+
+Updated the Ionic framework, small styling changes and changed the colour of the page heading bars to the standard NITROX green and yellow colour scheme.
 
 = 0.0.3 = 
 

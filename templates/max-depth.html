@@ -1,10 +1,13 @@
-<ion-view title="Nitrox MOD" cache-view="false">
-  <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-hide="$exposeAside.active"></button>
-  </ion-nav-buttons>
+<ion-view title="MOD Calculator" cache-view="false" align-title="center">
+  <ion-nav-bar class="nitroxMenu">
+    <ion-nav-buttons side="left" class="bar bar-header bar-assertive">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-hide="$exposeAside.active"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar> 
+
   <ion-content class="has-header bodyElement paneBackground" padding="true">
     <div class="card">
-      <div class="item item-divider bar bar-header bar-assertive headingText">
+      <div class="item item-divider bar bar-header nitroxMenu headingText">
           NITROX MOD
       </div>
 
@@ -37,6 +40,7 @@
                 Oxygen
               </div>
               <select ng-model="nitroxInput.mix" class="formInput" align="center" ng-init="nitroxInput.mix = 0.32">
+                <option value="" disabled selected>Select Oxygen Content</option>              
                 <option value="0.21">21% ( Air )</option>
                 <option value="0.22">22%</option>              
                 <option value="0.23">23%</option>
@@ -125,34 +129,38 @@
           <button ng-click="maxDepth(nitroxInput)" class="button button-block button-energized ion-calculator">
               Calculate MOD
           </button> 
+
+          <a href="#/app/home" class="button button-block button-energized ion-home">
+            Home
+          </a>                         
         </div>      
 
         <div ng-if="showForm == 0">
 
                 <div class="row">
-                    <div class="col">Maximum Depth:</div>
+                    <div class="col resultHeading">Maximum Depth:</div>
                     <div class="col">{{::maxDepth.depth}} {{::maxDepth.unit}} ( MOD )</div>
                 </div>
 
                 <br />
 
                 <div class="row">
-                    <div class="col">Oxygen Content:</div>
+                    <div class="col resultHeading">Oxygen Content:</div>
                     <div class="col">{{::nitroxMix}}%</div>
                 </div>   
 
                 <br />
 
                 <div class="row">
-                    <div class="col">Partial Pressure</div>
-                    <div class="col">{{::partialPressure}} ata ( PO2 )</div>
+                    <div class="col resultHeading">Partial Pressure (PO2):</div>
+                    <div class="col">{{::partialPressure}} ata</div>
                 </div> 
 
                 <br />               
 
                 <div class="row">
-                    <div class="col">Equivalent Air Depth</div>
-                    <div class="col">{{::maxDepth.ead}} {{::maxDepth.unit}} ( EAD )</div>
+                    <div class="col resultHeading">Equivalent Air Depth (EAD):</div>
+                    <div class="col">{{::maxDepth.ead}} {{::maxDepth.unit}}</div>
                 </div>  
 
                 <br /> 
@@ -162,7 +170,12 @@
                 </div>
           <button ng-click="resetForm()" class="button button-block button-energized ion-calculator">
               Calculate another mix
-          </button>           
+          </button>      
+
+          
+          <a href="#/app/home" class="button button-block button-energized ion-home">
+            Home
+          </a>               
         </div>               
     </div>
   </ion-content>
