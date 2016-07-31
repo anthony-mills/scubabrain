@@ -14,24 +14,16 @@
       <div class="item item-text-wrap">
         <div ng-if="showForm == 1">
           <div class="list formContainer">
-            <div class="formLabel">
-              Max Partial Pressure ( PO2 )
-            </div>             
-            <label class="item item-radio">             
-              <input type="radio" name="max_po2" value="14" class="formInput" ng-init="nitroxInput.pressure = 14" ng-model="nitroxInput.pressure" checked>
-              <div class="item-content">
-                1.4
+            <label>
+              <div class="formLabel">
+                Max Partial Pressure ( PO2 )
               </div>
-              <i class="radio-icon ion-checkmark"></i>
-            </label>
-
-            <label class="item item-radio">    
-              <input type="radio" name="max_po2" value="16" class="formInput" ng-model="nitroxInput.pressure">
-              <div class="item-content">
-                1.6
-              </div>
-              <i class="radio-icon ion-checkmark"></i>
-            </label>          
+              <select name="max_po2" class="formInput" align="center" ng-init="nitroxInput.pressure = 14" ng-model="nitroxInput.pressure">  
+                <option value="14" selected="selected">1.4</option>
+                <option value="16">1.6</option>              
+                                                                                  
+              </select>
+            </label>                    
           </div>
 
           <div class="list formContainer">
